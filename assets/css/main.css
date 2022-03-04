@@ -1,0 +1,1023 @@
+
+@font-face {
+  font-family: "Quark-Light";
+  src: url("../fonts/Quark-Light.otf");
+}
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+/* ------------------------------------ */
+a {
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* ------------------------------------ */
+h1,h2,h3,h4,h5,h6 {margin: 0px;}
+
+p {margin: 0px;}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/* ------------------------------------ */
+input {
+  display: block;
+	outline: none;
+	border: none !important;
+}
+
+textarea {
+  display: block;
+  outline: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+/* ------------------------------------ */
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utiliti ]*/
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  background: #77dfd9;
+  background: -webkit-linear-gradient(45deg, #77dfd9, #9ff8d6);
+  background: -o-linear-gradient(45deg, #77dfd9, #9ff8d6);
+  background: -moz-linear-gradient(45deg, #77dfd9, #9ff8d6);
+  background: linear-gradient(45deg, #77dfd9, #9ff8d6);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 100px;
+  padding-top: 120px;
+  flex-direction: column;
+  align-items : stretch;
+}
+
+.namemaindata
+{
+  margin-bottom: 20px;
+  font-size: 35px;
+  text-align: center;
+  color : #fff;
+  display: flex;
+  justify-content : space-between;
+}
+
+.adddata
+{
+  display: flex;
+}
+
+.search
+{
+  display: flex;
+  margin-left : 15px;
+}
+
+.search input[type=text]
+{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: 300px;
+}
+
+.search button {
+  float: right;
+  padding: 10px 10px;
+  background: #fff;
+  font-size: 20px;
+  border: none;
+  width: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #ff589e;
+  color: #fff;
+}
+
+.wrap-table100 {
+  width: -webkit-fill-available;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #36304a;
+}
+.object table tbody tr {
+  height: 80px;
+}
+
+.detailobject table tbody tr {
+  height: 80px;
+}
+
+.vdo_call table tbody tr {
+  height: 80px;
+}
+
+
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+.table100-head th{
+  font-family: "Quark-Light";
+  font-size: 23px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: "Quark-Light";
+  font-size: 21px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.object .column1 {
+  width: 150px;
+  padding-left: 40px;
+}
+
+.object .column2 {
+  width: 275px;
+}
+
+.object .column3 {
+  width: 275px;
+}
+
+.object .column4 {
+  width: 310px;
+}
+
+.object .column5 {
+  width: 50px;
+  text-align: center;
+}
+
+.object .column6 {
+  width: 50px;
+  text-align: center;
+}
+
+.detailobject .column1 {
+  width: 100px;
+  padding-left: 40px;
+}
+
+.detailobject .column2 {
+  width: 200px;
+  text-align: center;
+}
+
+.detailobject .column3 {
+  width: 200px;
+  text-align: center;
+}
+
+.detailobject .column4 {
+  width: 200px;
+  text-align: center;
+}
+
+.detailobject .column5 {
+  width: 200px;
+  text-align: center;
+}
+
+.detailobject .column6 {
+  width: 150px;
+  text-align: center;
+}
+
+.detailobject .column7 {
+  width: 150px;
+  text-align: center;
+}
+
+.detailobject .column8 {
+  width: 50px;
+  text-align: center;
+}
+
+.detailobject .column9 {
+  width: 50px;
+  text-align: center;
+}
+
+.vdo_call .column1 {
+  width: 200px;
+  padding-left: 40px;
+}
+
+.vdo_call .column2 {
+  width: 250px;
+  text-align: center;
+}
+
+.vdo_call .column3 {
+  width: 175px;
+  text-align: center;
+}
+
+.vdo_call .column4 {
+  width: 500px;
+  text-align: center;
+}
+
+.vdo_call .column5 {
+  width: 150px;
+  text-align: center;
+}
+
+.vdo_call .column6 {
+  width: 150px;
+  text-align: center;
+}
+
+.vdo_call .column7 {
+  width: 150px;
+  text-align: center;
+}
+
+
+.newobject .column1 {
+  padding-left: 15px;
+}
+
+.newobject input[type=text]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+}
+
+select{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+}
+
+.newobject button[type=submit]{
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #ff589e;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.newobject button[type=submit]:hover{
+  background-color: #8261ee;
+}
+
+.newdetailobject input[type=text]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+}
+
+.newdetailobject select{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+  border: 0px;
+}
+
+.newdetailobject input[type=number]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+}
+
+.newdetailobject input[type=date]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+}
+
+.newdetailobject button[type=submit]{
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #ff589e;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.newdetailobject button[type=submit]:hover{
+  background-color: #8261ee;
+}
+
+.newvdo_call input[type=text]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+}
+
+.newvdo_call select{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+  border: 0px;
+}
+
+.newvdo_call input[type=number]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+}
+
+.newvdo_call input[type=date]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 21px;
+  width: 270px;
+}
+
+.newvdo_call button[type=submit]{
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #ff589e;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.newvdo_call button[type=submit]:hover{
+  background-color: #8261ee;
+}
+
+.delete button[type=submit]{
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #ff589e;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.delete button[type=submit]:hover{
+  background-color: #8261ee;
+}
+
+.returndata
+{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  background-color: #69cb5e;
+  color: #fff;
+  font-weight: 500;
+  text-align:center;
+  letter-spacing: 0.5px;
+  font-size: 22px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.returndatafalse{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 500;
+  text-align:center;
+  letter-spacing: 0.5px;
+  font-size: 22px;
+  width: auto;
+  margin-bottom: 20px;
+  background-color: #db4c4c !important;
+}
+
+.newobject{
+	width:500px;
+	margin:auto;
+}
+
+.newobject table thead {
+    display: contents;
+}
+
+.newobject table thead tr{
+    padding-left: 15px;
+    padding-top:15px;
+}
+
+.newobject table tbody tr td {
+	display :block !important;
+    padding-left: 40% !important;
+    padding-bottom: 20px;
+    padding-top :20px;
+}
+
+.newobject table tbody tr td:last-child {
+    margin-bottom: 0;
+}
+
+.newobject table tbody tr td:before {
+    font-family: "Quark-Light";
+    font-size: 21px;
+    color: #000000;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: auto;
+
+}
+
+.newobject table tbody tr td:nth-child(1):before {
+    content: "ID";
+}
+
+.newobject table tbody tr td:nth-child(2):before {
+    content: "ชื่อยา";
+}
+
+.newobject table tbody tr td:nth-child(3):before {
+    content: "ชนิดยา";
+}
+
+.newobject table tbody tr td:nth-child(4):before {
+    content: "คำอธิบาย";
+}
+
+.newdetailobject{
+	width:500px;
+	margin:auto;
+}
+
+.newdetailobject table thead {
+    display: contents;
+}
+
+.newdetailobject table thead tr{
+    padding-left: 15px;
+    padding-top:15px;
+}
+
+.newdetailobject table tbody tr td {
+	display :block !important;
+    padding-left: 40% !important;
+    padding-bottom: 20px;
+    padding-top :20px;
+}
+
+.newdetailobject table tbody tr td:last-child {
+    margin-bottom: 0;
+}
+
+.newdetailobject table tbody tr td:before {
+    font-family: "Quark-Light";
+    font-size: 21px;
+    color: #000000;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: auto;
+
+}
+
+.newdetailobject table tbody tr td:nth-child(1):before {
+    content: "ID";
+  }
+.newdetailobject table tbody tr td:nth-child(2):before {
+    content: "วันที่";
+  }
+.newdetailobject table tbody tr td:nth-child(3):before {
+    content: "ข้อคิดเห็น";
+  }
+.newdetailobject table tbody tr td:nth-child(4):before {
+    content: "ยา";
+  }
+.newdetailobject table tbody tr td:nth-child(5):before {
+    content: "จำนวนโดส";
+  }
+.newdetailobject table tbody tr td:nth-child(6):before {
+    content: "แพทย์";
+  }
+.newdetailobject table tbody tr td:nth-child(7):before {
+    content: "Assessment";
+  }
+
+.newvdo_call{
+	width:500px;
+	margin:auto;
+}
+
+.newvdo_call table thead {
+    display: contents;
+}
+
+.newvdo_call  table thead tr{
+    padding-left: 15px;
+    padding-top:15px;
+}
+
+.newvdo_call  table tbody tr td {
+	display :block !important;
+    padding-left: 40% !important;
+    padding-bottom: 20px;
+    padding-top :20px;
+}
+
+.newvdo_call table tbody tr td:last-child {
+    margin-bottom: 0;
+}
+
+.newvdo_call table tbody tr td:before {
+    font-family: "Quark-Light";
+    font-size: 21px;
+    color: #000000;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: auto;
+
+}
+
+.newvdo_call table tbody tr td:nth-child(1):before {
+    content: "วันที่";
+  }
+.newvdo_call table tbody tr td:nth-child(2):before {
+    content: "รายชื่อ";
+  }
+.newvdo_call table tbody tr td:nth-child(3):before {
+    content: "อาการ";
+  }
+.newvdo_call table tbody tr td:nth-child(4):before {
+    content: "ระดับสี";
+  }
+
+.nameheader{
+	display:none
+}
+
+@media screen and (max-width: 992px) {
+
+  .nameheader{
+  	display:grid;
+	font-size:22px;
+	font-weight:bold;
+    padding-top:15px;
+    color: #c850c0;;
+  }    
+
+  .namemaindata
+  {
+  margin-bottom: auto;
+  font-size: 40px;
+  text-align: center;
+  color : #fff;
+  display: block;
+
+  }
+
+  .adddata
+  {
+  display: flex;
+  justify-content : space-between;
+  margin-bottom : 20px;
+  margin-top: 10px;
+  }
+
+  .search
+  {
+  display: flex;
+  margin-left : 15px;
+  }
+
+  .search input[type=text]
+  {
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: auto !important;
+  }
+
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  .object table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  .object table tbody tr td {
+    padding-left: 40% !important;
+    padding-bottom: 40px;
+  }
+  .object table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  .object table tbody tr td:before {
+    font-family: "Quark-Light";
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  .object table tbody tr td:nth-child(1):before {
+    content: "ชื่อ";
+  }
+  .object table tbody tr td:nth-child(2):before {
+    content: "คำอธิบาย";
+  }
+
+  .detailobject table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  .detailobject table tbody tr td {
+    padding-left: 40% !important;
+    padding-bottom: 40px;
+  }
+  .detailobject table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  .detailobject table tbody tr td:before {
+    font-family: "Quark-Light";
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  .detailobject table tbody tr td:nth-child(1):before {
+    content: "วันที่";
+  }
+  .detailobject table tbody tr td:nth-child(2):before {
+    content: "รายการ Home Isolation";
+  }
+  .detailobject table tbody tr td:nth-child(3):before {
+    content: "รายชื่อ";
+  }
+  .detailobject table tbody tr td:nth-child(4):before {
+    content: "สิ่งของ";
+  }
+  .detailobject table tbody tr td:nth-child(5):before {
+    content: "จำนวน";
+  }
+
+  .vdo_call table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  .vdo_call table tbody tr td {
+    padding-left: 40% !important;
+    padding-bottom: 40px;
+  }
+  .vdo_call table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  .vdo_call table tbody tr td:before {
+    font-family: "Quark-Light";
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+
+  .vdo_call table tbody tr td:nth-child(1):before {
+    content: "วันที่";
+  }
+  .vdo_call table tbody tr td:nth-child(2):before {
+    content: "รายการ Home Isolation";
+  }
+  .vdo_call table tbody tr td:nth-child(3):before {
+    content: "รายชื่อ";
+  }
+  .vdo_call table tbody tr td:nth-child(4):before {
+    content: "อาการ";
+  }
+  .vdo_call table tbody tr td:nth-child(5):before {
+    content: "ระดับสี";
+  }
+
+  .object
+  .column4,
+  .column1,
+  .column2,
+  .column3 {
+    width: 95% !important;
+    text-align: left !important;
+  }
+
+  .detailobject
+  .column7,
+  .column6,
+  .column5,
+  .column4,
+  .column1,
+  .column2,
+  .column3 {
+    width: 95% !important;
+    text-align: left !important;
+  }
+
+  .vdo_call
+  .column7,
+  .column6,
+  .column5,
+  .column4,
+  .column1,
+  .column2,
+  .column3 {
+    width: 95% !important;
+    text-align: left !important;
+  }
+
+  tbody tr {
+    font-size: 18px;
+  }
+
+  
+
+  .newobject input[type=text]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: -webkit-fill-available;
+  }
+
+  .newdetailobject input[type=text]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: -webkit-fill-available;
+  }
+
+  .newdetailobject select{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: -webkit-fill-available;
+  }
+
+  .newdetailobject input[type=date]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: -webkit-fill-available;
+  }
+
+  .newdetailobject input[type=number]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: -webkit-fill-available;
+  }
+
+  .newvdo_call input[type=text]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: -webkit-fill-available;
+  }
+
+  .newvdo_call select{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: -webkit-fill-available;
+  }
+
+  .newvdo_call input[type=date]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: -webkit-fill-available;
+  }
+
+  .newvdo_call input[type=number]{
+  padding: 12px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  width: -webkit-fill-available;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .newobject{
+	width:unset;
+	margin:unset;
+  }
+
+  .newdetailobject{
+	width:unset;
+	margin:unset;
+  }
+
+  .newvdo_call{
+	width:unset;
+	margin:unset;
+  }
+
+  .nameheader{
+    margin-right: 45px;
+  }  
+}
